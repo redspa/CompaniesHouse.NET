@@ -36,7 +36,7 @@ namespace LiberisLabs.CompaniesHouse.Response.OfficerList
         public OfficerRole OfficerRole { get; set; }
 
         [JsonProperty(PropertyName ="resigned_on")]
-        public DateTime ResignedOn { get; set; }
+        public DateTime? ResignedOn { get; set; }
 
 
     }
