@@ -133,6 +133,8 @@ namespace LiberisLabs.CompaniesHouse.Response.CompanyProfile
 
         [JsonProperty(PropertyName = "month")]
         public int Month { get; set; }
+
+        public string DayAndMonth => $"{Day}/{Month}";
     }
 
     
