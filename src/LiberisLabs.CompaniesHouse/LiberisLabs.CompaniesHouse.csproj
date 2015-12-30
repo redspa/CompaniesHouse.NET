@@ -86,6 +86,7 @@
     <Compile Include="Response\CompanyProfile\AccountingReferenceDateInfo.cs" />
     <Compile Include="Response\CompanyProfile\AccountsInfo.cs" />
     <Compile Include="Response\CompanyProfile\AccountsType.cs" />
+    <Compile Include="Response\CompanyProfile\AnnualReturnInfo.cs" />
     <Compile Include="Response\CompanyProfile\CompanyProfile.cs" />
     <Compile Include="Response\CompanyProfile\LastAccountsInfo.cs" />
     <Compile Include="Response\CompanyProfile\OfficerInfo.cs" />
