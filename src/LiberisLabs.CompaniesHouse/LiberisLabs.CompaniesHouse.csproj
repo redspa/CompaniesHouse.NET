@@ -83,8 +83,14 @@
     <Compile Include="Request\CompanySearchRequest.cs" />
     <Compile Include="Request\OfficerListRequest.cs" />
     <Compile Include="Request\PagedSearchRequest.cs" />
+    <Compile Include="Response\CompanyProfile\AccountingReferenceDateInfo.cs" />
+    <Compile Include="Response\CompanyProfile\AccountsInfo.cs" />
     <Compile Include="Response\CompanyProfile\AccountsType.cs" />
+    <Compile Include="Response\CompanyProfile\AnnualReturnInfo.cs" />
     <Compile Include="Response\CompanyProfile\CompanyProfile.cs" />
+    <Compile Include="Response\CompanyProfile\LastAccountsInfo.cs" />
+    <Compile Include="Response\CompanyProfile\OfficerInfo.cs" />
+    <Compile Include="Response\CompanyProfile\OfficerSummaryInfo.cs" />
     <Compile Include="Response\CompanySearch\Address.cs" />
     <Compile Include="Response\CompanySearch\CompanyStatus.cs" />
     <Compile Include="Response\CompanySearch\CompanyType.cs" />

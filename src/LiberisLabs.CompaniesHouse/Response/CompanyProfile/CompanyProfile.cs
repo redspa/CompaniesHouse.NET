@@ -23,6 +23,9 @@ namespace LiberisLabs.CompaniesHouse.Response.CompanyProfile
         [JsonProperty(PropertyName = "accounts")]
         public AccountsInfo Accounts {get;set;}
 
+        [JsonProperty(PropertyName = "annual_return")]
+        public AnnualReturnInfo AnnualReturn { get; set; }
+
         [JsonProperty(PropertyName ="can_file")]
         public bool CanFile { get; set; }
 
@@ -69,71 +72,4 @@ namespace LiberisLabs.CompaniesHouse.Response.CompanyProfile
         [JsonProperty(PropertyName = "officer_summary")]
         public OfficerSummaryInfo OfficerSummary { get; set; }
     }
-
-    public class AccountsInfo
-    {
-        [JsonProperty(PropertyName ="next_due")]
-        public DateTime NextDue { get; set; }
-
-        [JsonProperty(PropertyName ="next_made_up_to")]
-        public DateTime NextMadeUpTo { get; set; }
-
-        [JsonProperty(PropertyName = "overdue")]
-        public bool Overdue { get; set; }
-
-        [JsonProperty(PropertyName = "last_accounts")]
-        public LastAccountsInfo LastAccounts { get; set; }
-
-        [JsonProperty(PropertyName = "accounting_reference_date")]
-        public AccountingReferenceDateInfo AccountingReferenceDate { get; set; }
-
-      
-    }
-
-    public class OfficerSummaryInfo
-    {
-        [JsonProperty(PropertyName ="active_count")]
-        public int ActiveCount { get; set; }
-
-        [JsonProperty(PropertyName ="resigned_count")]
-        public int ResignedCount { get; set; }
-
-        [JsonProperty(PropertyName ="officers")]
-        public OfficerInfo[] Officers { get; set; }
-    }
-
-    public class OfficerInfo
-    {
-        [JsonProperty(PropertyName ="appointed_on")]
-        public DateTime AppointedOn { get; set; }
-
-        [JsonProperty(PropertyName ="name")]
-        public string Name { get; set; }
-
-        [JsonProperty(PropertyName ="officer_role")]
-        public string OfficerRole { get; set; }
-    }
-
-
-
-    public class LastAccountsInfo {
-
-        [JsonProperty(PropertyName = "made_up_to")]
-        public DateTime MadeUpTo { get; set; }
-
-        [JsonProperty(PropertyName ="type")]
-        [JsonConverter(typeof(StringEnumConverter))]
-        public AccountsType Type { get; set; }
-    }
-
-    public class AccountingReferenceDateInfo
-    {
-        [JsonProperty(PropertyName ="day")]
-        public int Day { get; set; }
-
-        [JsonProperty(PropertyName = "month")]
-        public int Month { get; set; }
-    }
-
-    
 }
