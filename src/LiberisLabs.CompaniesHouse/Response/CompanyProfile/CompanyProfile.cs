@@ -7,6 +7,8 @@ namespace LiberisLabs.CompaniesHouse.Response.CompanyProfile
 {
     public class CompanyProfile
     {
+        #region Properties
+
         [JsonProperty(PropertyName = "company_name")]
         public string CompanyName { get; set; }
 
@@ -71,5 +73,10 @@ namespace LiberisLabs.CompaniesHouse.Response.CompanyProfile
 
         [JsonProperty(PropertyName = "officer_summary")]
         public OfficerSummaryInfo OfficerSummary { get; set; }
+
+        [JsonProperty(PropertyName = "confirmation_statement")]
+        public ConfirmationStatementInfo ConfirmationStatement { get; set; }
+
+        #endregion
     }
 }
